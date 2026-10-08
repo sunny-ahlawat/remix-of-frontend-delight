@@ -123,7 +123,7 @@ function Index() {
         </nav>
         {mobileMenuOpen && <div className="border-t hairline bg-background px-6 py-4 md:hidden">
           <div className="flex flex-col gap-4 text-sm">
-            {[ ["About", "#about"], ["Capabilities", "#capabilities"], ["Network", "#network"], ["Insights", "#insights"] ].map(([label, href]) => <a key={href} href={href} className="text-copy-muted" onClick={() => setMobileMenuOpen(false)}>{label}</a>)}
+            {[ ["About", "#about"], ["Capabilities", "#capabilities"], ["Network", "#network"], ["Insights", "#insights"] ].map(([label, href]) => <a key={href ?? label} href={href ?? "#top"} className="text-copy-muted" onClick={() => setMobileMenuOpen(false)}>{label}</a>)}
           </div>
         </div>}
       </header>
