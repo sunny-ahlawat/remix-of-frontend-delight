@@ -184,8 +184,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
 .network-line { fill:none; stroke:var(--metal); stroke-width:.7; stroke-opacity:.26; stroke-dasharray:4 5; animation:line-flow 24s linear infinite; }
 .network-dot { fill:var(--paper); filter:drop-shadow(0 0 5px color-mix(in oklab, var(--metal) 60%, transparent)); animation:node-glow 5s ease-in-out infinite alternate; }
 .network-dot--core { fill:var(--metal); }
-.network-label { fill:var(--paper-dim); font: 9px var(--font-sans); letter-spacing:1.8px; }
-.network-label--core { fill:var(--paper); font: 600 11px var(--font-sans); letter-spacing:2px; }
+.network-label { fill:var(--paper-dim); font: 9px var(--font-sans); }
+.network-label--core { fill:var(--paper); font: 600 11px var(--font-sans); }
 .mobile-map { display:none; }
 .capability-card { transition:background-color .35s ease, transform .35s ease, border-color .35s ease; }
 .capability-card:hover, .capability-card:focus-within { background:var(--surface-raised); border-color:color-mix(in oklab, var(--metal) 55%, transparent); transform:translateY(-3px); }
