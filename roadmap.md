@@ -5,3 +5,4 @@
 - [x] Build the one-page story, responsive navigation, relationship visuals, capability/process sections, market and trust content, opportunity preview, calls to action, and footer.
 - [x] Add an accessible request modal with intent selection, contact details, optional file input, privacy warning, and confirmation state.
 - [x] Verify desktop rendering, mobile layout, request form submission state, and build/runtime status.
+- [ ] Soften typography and replace warm accents with a subtle blue tint; verify the updated page.

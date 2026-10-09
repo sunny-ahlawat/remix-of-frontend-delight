@@ -76,16 +76,16 @@
 :root {
   color-scheme: dark;
   --radius: 0.25rem;
-  --ink: oklch(0.13 0.006 275);
-  --paper: oklch(0.94 0.014 83);
-  --paper-dim: oklch(0.82 0.014 83);
-  --metal: oklch(0.78 0.035 83);
-  --metal-soft: oklch(0.53 0.025 83);
-  --surface-deep: oklch(0.16 0.008 275);
-  --surface-raised: oklch(0.205 0.008 275);
-  --hairline: oklch(0.94 0.014 83 / 15%);
-  --copy-muted: oklch(0.69 0.012 83);
-  --copy-faint: oklch(0.49 0.012 83);
+  --ink: oklch(0.145 0.009 255);
+  --paper: oklch(0.9 0.006 250);
+  --paper-dim: oklch(0.79 0.012 250);
+  --metal: oklch(0.73 0.064 250);
+  --metal-soft: oklch(0.53 0.035 250);
+  --surface-deep: oklch(0.175 0.011 255);
+  --surface-raised: oklch(0.22 0.012 255);
+  --hairline: oklch(0.79 0.025 250 / 15%);
+  --copy-muted: oklch(0.68 0.012 250);
+  --copy-faint: oklch(0.55 0.012 250);
   --background: var(--ink);
   --foreground: var(--paper);
   --card: var(--surface-deep);
@@ -164,6 +164,8 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
+    font-weight: 300;
+    letter-spacing: 0;
     font-feature-settings: "ss01" on;
     -webkit-font-smoothing: antialiased;
   }
@@ -172,9 +174,9 @@
 html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
 ::selection { background: var(--metal); color: var(--ink); }
 
-@utility font-editorial { font-family: var(--font-display); }
+@utility font-editorial { font-family: var(--font-display); font-weight: 400; }
 @utility section-shell { width: min(100% - 3rem, 80rem); margin-inline: auto; }
-@utility eyebrow { color: var(--metal); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; }
+@utility eyebrow { color: var(--metal); font-size: 0.65rem; font-weight: 400; letter-spacing: 0; text-transform: uppercase; }
 @utility hairline { border-color: var(--hairline); }
 
 .hero__image { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 53%; opacity:.63; }
@@ -185,7 +187,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
 .network-dot { fill:var(--paper); filter:drop-shadow(0 0 5px color-mix(in oklab, var(--metal) 60%, transparent)); animation:node-glow 5s ease-in-out infinite alternate; }
 .network-dot--core { fill:var(--metal); }
 .network-label { fill:var(--paper-dim); font: 9px var(--font-sans); }
-.network-label--core { fill:var(--paper); font: 600 11px var(--font-sans); }
+.network-label--core { fill:var(--paper); font: 400 11px var(--font-sans); }
 .mobile-map { display:none; }
 .capability-card { transition:background-color .35s ease, transform .35s ease, border-color .35s ease; }
 .capability-card:hover, .capability-card:focus-within { background:var(--surface-raised); border-color:color-mix(in oklab, var(--metal) 55%, transparent); transform:translateY(-3px); }
@@ -210,7 +212,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
 @media (max-width: 760px) {
   html { scroll-padding-top:4.5rem; }
   .section-shell { width:min(100% - 2rem, 80rem); }
-  .hero__title { font-size:2.65rem; }
+  .hero__title { font-size:2.5rem; }
   .hero__image { object-position:58% center; opacity:.5; }
   .hero__scrim { background:linear-gradient(90deg, color-mix(in oklab, var(--ink) 85%, transparent), color-mix(in oklab, var(--ink) 30%, transparent)), linear-gradient(0deg, var(--ink) 0%, transparent 65%); }
   .hero__network { display:none; }

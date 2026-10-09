@@ -100,7 +100,7 @@ function Index() {
     <main className="overflow-hidden bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-40 border-b hairline bg-background/85 backdrop-blur-md">
         <nav className="section-shell flex h-[4.75rem] items-center justify-between" aria-label="Main navigation">
-          <a href="#top" className="flex items-center gap-3 text-sm font-semibold text-paper" aria-label="DJ Partner home">
+          <a href="#top" className="flex items-center gap-3 text-sm font-normal text-paper" aria-label="DJ Partner home">
             <span className="flex size-8 items-center justify-center border border-metal/50 font-editorial text-xl text-metal">D</span>
             <span>DJ PARTNER</span>
           </a>
@@ -135,9 +135,9 @@ function Index() {
         <div className="section-shell relative z-10 grid min-h-[690px] items-center md:min-h-[750px] md:grid-cols-[1fr_0.65fr]">
           <div className="hero__copy min-w-0 max-w-[43rem] py-20">
             <p className="eyebrow mb-7">Global advisory <span aria-hidden="true">·</span> Capital <span aria-hidden="true">·</span> Relationships</p>
-            <h1 className="hero__title font-editorial text-6xl font-medium leading-[0.94] text-paper sm:text-7xl md:text-[6.5rem]">
-              CAPITAL MOVES.<br />
-              <span className="text-metal">RELATIONSHIPS</span><br />DECIDE.
+            <h1 className="hero__title font-editorial text-5xl font-normal leading-[1.08] text-paper sm:text-5xl md:text-[5rem]">
+              Capital moves.<br />
+              <span className="text-metal">Relationships</span><br />decide.
             </h1>
             <p className="mt-8 max-w-lg text-base leading-7 text-paper-dim md:text-lg md:leading-8">DJ Partner connects qualified businesses, investors and private capital through strategic intelligence, curated relationships and transaction-focused advisory.</p>
             <div className="mt-9 flex flex-wrap items-center gap-5">
@@ -163,9 +163,9 @@ function Index() {
       </section>
 
       <section id="about" className="section-shell grid gap-14 py-28 md:grid-cols-[0.7fr_1.3fr] md:py-40">
-        <div><p className="eyebrow">The opportunity is not the problem</p><h2 className="mt-6 max-w-sm font-editorial text-4xl leading-tight text-paper md:text-5xl">The capital ecosystem is not short of opportunity.</h2></div>
+        <div><p className="eyebrow">The opportunity is not the problem</p><h2 className="mt-6 max-w-sm font-editorial text-3xl leading-tight text-paper md:text-4xl">The capital ecosystem is not short of opportunity.</h2></div>
         <div className="border-l hairline pl-7 md:pl-12">
-          <p className="font-editorial text-5xl leading-[1.05] text-paper md:text-7xl">It’s short of<br /><span className="text-metal">the right connection.</span></p>
+          <p className="font-editorial text-4xl leading-[1.05] text-paper md:text-5xl">It’s short of<br /><span className="text-metal">the right connection.</span></p>
           <div className="mt-8 grid gap-6 text-sm leading-7 text-copy-muted md:grid-cols-2">
             <p>Capital exists. Businesses exist. Investors exist. Opportunities exist. But the path between them is rarely simple.</p>
             <p>The right company can struggle to reach the right capital. A promising transaction can stall before its participants are properly aligned.</p>
@@ -176,7 +176,7 @@ function Index() {
 
       <section className="border-y hairline bg-surface-deep py-24 md:py-32" aria-labelledby="connect-heading">
         <div className="section-shell">
-          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end"><div><p className="eyebrow">A considered path to connection</p><h2 id="connect-heading" className="mt-4 font-editorial text-5xl text-paper md:text-6xl">We connect the dots.</h2></div><p className="max-w-sm text-sm leading-6 text-copy-muted">A relationship map built around relevance, qualification and alignment—not introductions for their own sake.</p></div>
+          <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end"><div><p className="eyebrow">A considered path to connection</p><h2 id="connect-heading" className="mt-4 font-editorial text-4xl text-paper md:text-5xl">We connect the dots.</h2></div><p className="max-w-sm text-sm leading-6 text-copy-muted">A relationship map built around relevance, qualification and alignment—not introductions for their own sake.</p></div>
           <div className="relative mt-14 grid gap-5 md:grid-cols-[1fr_1.2fr_1fr] md:items-center">
             <div className="grid grid-cols-2 gap-2 md:grid-cols-1">{["Businesses", "Founders", "Startups"].map((label) => <div key={label} className="border hairline px-4 py-4 text-xs text-paper-dim">{label}</div>)}</div>
             <div className="relative flex min-h-52 flex-col items-center justify-center border-y hairline py-9 md:border-x md:border-y-0">
@@ -192,7 +192,7 @@ function Index() {
 
       <section id="capabilities" className="section-shell py-28 md:py-36">
         <div className="grid gap-10 md:grid-cols-[0.7fr_1.3fr]">
-          <div><p className="eyebrow">Where we work</p><h2 className="mt-5 max-w-sm font-editorial text-5xl leading-tight text-paper md:text-6xl">Across the capital ecosystem.</h2><p className="mt-6 max-w-sm text-sm leading-6 text-copy-muted">Focused advisory, intelligence and transaction support across connected markets.</p></div>
+          <div><p className="eyebrow">Where we work</p><h2 className="mt-5 max-w-sm font-editorial text-4xl leading-tight text-paper md:text-5xl">Across the capital ecosystem.</h2><p className="mt-6 max-w-sm text-sm leading-6 text-copy-muted">Focused advisory, intelligence and transaction support across connected markets.</p></div>
           <div className="capability-strip grid grid-cols-1 gap-0 sm:grid-cols-2">
             {capabilities.map((item) => <article key={item.index} className="capability-card min-h-40 border-b hairline px-5 py-6 first:border-t sm:min-h-44 sm:border-t sm:nth-[2n]:border-l sm:nth-[2n]:border-l-hairline">
               <div className="flex items-center justify-between"><span className="capability-index text-xs text-copy-faint">{item.index}</span><ArrowUpRight className="size-4 text-metal/70" aria-hidden="true" /></div>
@@ -204,24 +204,24 @@ function Index() {
 
       <section className="border-y hairline bg-surface-deep py-24 md:py-36">
         <div className="section-shell grid gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-center">
-          <h2 className="font-editorial text-6xl leading-[0.96] text-paper md:text-8xl">ACCESS IS<br />EVERYWHERE.<br /><span className="text-metal">ALIGNMENT<br />IS RARE.</span></h2>
-          <div className="max-w-md md:justify-self-end"><p className="font-editorial text-3xl leading-snug text-paper-dim md:text-4xl">The right opportunity deserves the right audience.</p><p className="mt-6 text-sm leading-7 text-copy-muted">We focus on where capital, capability, timing and relationships actually align. Not every opportunity belongs to every investor.</p><p className="mt-10 border-l border-metal pl-5 text-sm text-paper">Private by nature. Strategic by design.</p></div>
+          <h2 className="font-editorial text-5xl leading-[1.08] text-paper md:text-6xl">Access is<br />everywhere.<br /><span className="text-metal">Alignment<br />is rare.</span></h2>
+          <div className="max-w-md md:justify-self-end"><p className="font-editorial text-3xl leading-snug text-paper-dim md:text-3xl">The right opportunity deserves the right audience.</p><p className="mt-6 text-sm leading-7 text-copy-muted">We focus on where capital, capability, timing and relationships actually align. Not every opportunity belongs to every investor.</p><p className="mt-10 border-l border-metal pl-5 text-sm text-paper">Private by nature. Strategic by design.</p></div>
         </div>
       </section>
 
       <section className="section-shell py-28 md:py-36">
-        <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><p className="eyebrow">The deal path</p><h2 className="mt-5 font-editorial text-5xl text-paper md:text-6xl">From context to connection.</h2></div><p className="max-w-xs text-sm leading-6 text-copy-muted">A disciplined process helps serious conversations move forward.</p></div>
+        <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end"><div><p className="eyebrow">The deal path</p><h2 className="mt-5 font-editorial text-4xl text-paper md:text-5xl">From context to connection.</h2></div><p className="max-w-xs text-sm leading-6 text-copy-muted">A disciplined process helps serious conversations move forward.</p></div>
         <div className="mt-14 grid gap-0 md:grid-cols-6">
           {dealSteps.map(([number, title, copy]) => <article key={number} className="relative grid grid-cols-[3rem_1fr] gap-3 border-t hairline py-5 md:block md:border-l md:border-t-0 md:px-4 md:py-0 md:first:border-l-0">
-            <span className="font-editorial text-3xl text-metal">{number}</span><div><h3 className="mt-1 text-xs font-semibold uppercase text-paper">{title}</h3><p className="mt-3 max-w-32 text-xs leading-5 text-copy-muted">{copy}</p></div>
+            <span className="font-editorial text-3xl text-metal">{number}</span><div><h3 className="mt-1 text-xs font-normal uppercase text-paper">{title}</h3><p className="mt-3 max-w-32 text-xs leading-5 text-copy-muted">{copy}</p></div>
           </article>)}
         </div>
-        <p className="mt-14 border-t hairline pt-7 font-editorial text-3xl text-paper md:text-4xl">The introduction is only the beginning.</p>
+        <p className="mt-14 border-t hairline pt-7 font-editorial text-3xl text-paper md:text-3xl">The introduction is only the beginning.</p>
       </section>
 
       <section id="network" className="border-y hairline bg-surface-deep py-24 md:py-32">
         <div className="section-shell grid gap-12 md:grid-cols-[1fr_0.85fr] md:items-center">
-          <div><p className="eyebrow">A global perspective</p><h2 className="mt-5 font-editorial text-6xl leading-[1] text-paper md:text-7xl">ONE NETWORK.<br /><span className="text-metal">MULTIPLE MARKETS.</span></h2><p className="mt-7 max-w-lg text-sm leading-7 text-copy-muted">Our operating perspective is global, with relationships developed across markets, industries and capital ecosystems.</p>
+          <div><p className="eyebrow">A global perspective</p><h2 className="mt-5 font-editorial text-5xl leading-[1] text-paper md:text-5xl">One network.<br /><span className="text-metal">Multiple markets.</span></h2><p className="mt-7 max-w-lg text-sm leading-7 text-copy-muted">Our operating perspective is global, with relationships developed across markets, industries and capital ecosystems.</p>
             <div className="mt-10 grid grid-cols-2 gap-x-5 gap-y-4 text-xs text-paper-dim sm:grid-cols-3">{["India", "Middle East", "Europe", "United Kingdom", "United States", "Asia"].map((region) => <span key={region} className="region-pin">{region}</span>)}</div>
           </div>
           <div className="relative min-h-[320px] border-y hairline md:min-h-[390px]">
@@ -233,21 +233,21 @@ function Index() {
 
       <section className="section-shell py-24 md:py-32">
         <div className="grid gap-10 md:grid-cols-[0.85fr_1.15fr]">
-          <div><p className="eyebrow">Who we work with</p><h2 className="mt-5 font-editorial text-5xl leading-tight text-paper md:text-6xl">Different players.<br /><span className="text-metal">One ecosystem.</span></h2></div>
+          <div><p className="eyebrow">Who we work with</p><h2 className="mt-5 font-editorial text-4xl leading-tight text-paper md:text-5xl">Different players.<br /><span className="text-metal">One ecosystem.</span></h2></div>
           <div className="flex flex-wrap content-start gap-2">{ecosystem.map((item, index) => <span key={item} className={`border px-4 py-3 text-xs ${index === 0 || index === 6 ? "border-metal/50 text-paper" : "hairline text-copy-muted"}`}>{item}</span>)}</div>
         </div>
       </section>
 
       <section className="border-y hairline bg-surface-deep py-24 md:py-32">
         <div className="section-shell grid gap-12 md:grid-cols-[1fr_0.7fr]">
-          <h2 className="font-editorial text-5xl leading-tight text-paper md:text-6xl">DEALS ARE BUILT ON CAPITAL.<br /><span className="text-metal">RELATIONSHIPS ARE BUILT ON TRUST.</span></h2>
+          <h2 className="font-editorial text-4xl leading-tight text-paper md:text-5xl">Deals are built on capital.<br /><span className="text-metal">Relationships are built on trust.</span></h2>
           <div><p className="max-w-md text-sm leading-7 text-copy-muted">DJ Partner works across multiple sides of the capital ecosystem. That requires discretion, clear context and disciplined communication.</p><ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 text-xs text-paper-dim">{["Confidentiality", "Context", "Clear communication", "Qualified relationships", "Disciplined execution"].map((item) => <li key={item} className="border-t hairline pt-3">{item}</li>)}</ul><p className="mt-10 font-editorial text-2xl text-paper">Trust isn’t a feature of the business. It is the business.</p></div>
         </div>
       </section>
 
       <section id="insights" className="section-shell py-28 md:py-36">
         <div className="flex items-center gap-2 text-xs text-metal"><LockKeyhole className="size-3.5" aria-hidden="true" /><span className="eyebrow">Coming into view</span></div>
-        <div className="mt-6 grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end"><div><h2 className="font-editorial text-6xl leading-none text-paper md:text-7xl">A better way<br /><span className="text-metal">to navigate opportunity.</span></h2></div><p className="max-w-lg text-sm leading-7 text-copy-muted">DJ Partner is developing a private digital environment designed to help qualified participants discover, evaluate and manage relevant opportunities and relationships.</p></div>
+        <div className="mt-6 grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end"><div><h2 className="font-editorial text-5xl leading-none text-paper md:text-5xl">A better way<br /><span className="text-metal">to navigate opportunity.</span></h2></div><p className="max-w-lg text-sm leading-7 text-copy-muted">DJ Partner is developing a private digital environment designed to help qualified participants discover, evaluate and manage relevant opportunities and relationships.</p></div>
         <div className="mt-12 grid gap-3 md:grid-cols-3">
           <div className="teaser-card teaser-card--blurred border hairline p-5"><div className="teaser-card__inner"><p className="eyebrow">Private opportunity</p><p className="mt-7 font-editorial text-2xl text-paper">Technology</p><p className="mt-2 text-xs text-copy-muted">Growth stage · Strategic capital</p><div className="mt-7 border-t hairline pt-4 text-xs text-metal">Request access <ArrowRight className="inline size-3" aria-hidden="true" /></div></div></div>
           <div className="teaser-card teaser-card--blurred border hairline p-5"><div className="teaser-card__inner"><p className="eyebrow">Investor profile</p><p className="mt-7 font-editorial text-2xl text-paper">Family office</p><p className="mt-2 text-xs text-copy-muted">Technology · Consumer · Global</p><div className="mt-7 border-t hairline pt-4 text-xs text-metal">View profile <ArrowRight className="inline size-3" aria-hidden="true" /></div></div></div>
@@ -257,18 +257,18 @@ function Index() {
       </section>
 
       <section className="border-y hairline bg-surface-deep py-28 text-center md:py-40">
-        <div className="section-shell"><p className="eyebrow">The right connection changes the conversation</p><h2 className="mt-7 font-editorial text-6xl leading-[0.95] text-paper md:text-8xl">WE DON’T BELIEVE<br /><span className="text-metal">IN RANDOM<br className="md:hidden" /> INTRODUCTIONS.</span></h2><p className="mt-8 font-editorial text-3xl text-paper-dim">We believe in relevant relationships.</p><p className="mx-auto mt-6 max-w-md text-sm leading-7 text-copy-muted">Relevant capital. Relevant opportunity.<br />Relevant timing. Relevant people.</p></div>
+        <div className="section-shell"><p className="eyebrow">The right connection changes the conversation</p><h2 className="mt-7 font-editorial text-5xl leading-[1.08] text-paper md:text-6xl">We don’t believe<br /><span className="text-metal">in random<br className="md:hidden" /> introductions.</span></h2><p className="mt-8 font-editorial text-3xl text-paper-dim">We believe in relevant relationships.</p><p className="mx-auto mt-6 max-w-md text-sm leading-7 text-copy-muted">Relevant capital. Relevant opportunity.<br />Relevant timing. Relevant people.</p></div>
       </section>
 
       <section className="section-shell py-28 md:py-36">
-        <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:items-end"><div><p className="eyebrow">Start a conversation</p><h2 className="mt-6 font-editorial text-6xl leading-[1] text-paper md:text-7xl">HAVE A DEAL?<br />NEED CAPITAL?<br /><span className="text-metal">SEEKING ALIGNMENT?</span></h2></div><div><p className="max-w-sm text-lg text-paper-dim">Let’s find the right path through the maze.</p><div className="mt-8 grid gap-0 border-t hairline sm:grid-cols-3">
+        <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:items-end"><div><p className="eyebrow">Start a conversation</p><h2 className="mt-6 font-editorial text-5xl leading-[1] text-paper md:text-5xl">Have a deal?<br />Need capital?<br /><span className="text-metal">Seeking alignment?</span></h2></div><div><p className="max-w-sm text-lg text-paper-dim">Let’s find the right path through the maze.</p><div className="mt-8 grid gap-0 border-t hairline sm:grid-cols-3">
           {([["For businesses", "Submit an opportunity", "I am raising capital"], ["For investors", "Request investor access", "I am looking for opportunities"], ["For partners", "Join the network", "I want to join the network"]] as const).map(([audience, label, option]) => <button key={audience} type="button" onClick={() => openRequest(label, option)} className="group border-b hairline px-4 py-5 text-left transition-colors hover:bg-surface-raised sm:border-r sm:last:border-r-0"><span className="eyebrow">{audience}</span><span className="mt-3 flex items-center justify-between gap-2 text-xs text-paper">{label}<ArrowUpRight className="size-4 shrink-0 text-metal transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" /></span></button>)}
         </div></div></div>
       </section>
 
       <footer className="border-t hairline bg-surface-deep pb-20 pt-12 md:pb-12">
         <div className="section-shell"><div className="grid gap-10 md:grid-cols-[1.2fr_0.7fr_0.7fr]">
-          <div><a href="#top" className="inline-flex items-center gap-3 text-sm font-semibold text-paper"><span className="flex size-8 items-center justify-center border border-metal/50 font-editorial text-xl text-metal">D</span> DJ PARTNER</a><p className="mt-4 font-editorial text-2xl text-paper-dim">The Intelligence Behind<br />Strategic Capital.</p></div>
+          <div><a href="#top" className="inline-flex items-center gap-3 text-sm font-normal text-paper"><span className="flex size-8 items-center justify-center border border-metal/50 font-editorial text-xl text-metal">D</span> DJ PARTNER</a><p className="mt-4 font-editorial text-2xl text-paper-dim">The Intelligence Behind<br />Strategic Capital.</p></div>
           <div><p className="eyebrow">Explore</p><div className="mt-4 grid grid-cols-2 gap-y-3 text-xs text-copy-muted"><a href="#about">About</a><a href="#capabilities">Capabilities</a><a href="#network">Network</a><a href="#insights">Insights</a></div></div>
           <div><p className="eyebrow">Global operations</p><p className="mt-4 text-xs leading-6 text-paper-dim">Delhi, India<br />Dwarka, New Delhi — 110045</p><Button variant="link" className="mt-2 h-auto px-0 text-xs text-metal" onClick={() => openRequest("Footer")}>Request access <ArrowUpRight aria-hidden="true" /></Button></div>
         </div><p className="mt-12 border-t hairline pt-6 text-[11px] leading-5 text-copy-faint">DJ Partner facilitates advisory, relationship and transaction support subject to applicable laws, regulations, mandates and eligibility requirements. No investment, funding, return or transaction outcome is guaranteed.</p><p className="mt-4 text-[10px] text-copy-faint">© {new Date().getFullYear()} DJ Partner. All rights reserved.</p></div>
@@ -313,9 +313,9 @@ function RequestModal({ intent, setIntent, success, onSubmit, onClose }: {
     <section className="modal-panel relative max-h-[94vh] w-full max-w-2xl overflow-y-auto border hairline bg-surface-deep p-6 sm:p-9" role="dialog" aria-modal="true" aria-labelledby="request-title" aria-describedby="request-description">
       <Button variant="ghost" size="icon" className="absolute right-4 top-4 text-copy-muted hover:text-paper" aria-label="Close request form" onClick={onClose}><X aria-hidden="true" /></Button>
       {success ? <div className="flex min-h-[410px] flex-col justify-center pr-8">
-        <p className="eyebrow">Request received</p><h2 id="request-title" className="mt-5 font-editorial text-5xl text-paper sm:text-6xl">Your request is in.</h2><p id="request-description" className="mt-6 max-w-lg text-sm leading-7 text-copy-muted">Our advisory team will review the information and contact you where there is a relevant opportunity to engage.</p><Button variant="outline" className="mt-9 w-fit rounded-none border-metal/50 text-xs text-paper" onClick={onClose}>Close</Button>
+        <p className="eyebrow">Request received</p><h2 id="request-title" className="mt-5 font-editorial text-4xl text-paper sm:text-5xl">Your request is in.</h2><p id="request-description" className="mt-6 max-w-lg text-sm leading-7 text-copy-muted">Our advisory team will review the information and contact you where there is a relevant opportunity to engage.</p><Button variant="outline" className="mt-9 w-fit rounded-none border-metal/50 text-xs text-paper" onClick={onClose}>Close</Button>
       </div> : <>
-        <p className="eyebrow">Private enquiry</p><h2 id="request-title" className="mt-4 font-editorial text-4xl text-paper sm:text-5xl">What brings you here?</h2><p id="request-description" className="mt-3 max-w-lg text-xs leading-6 text-copy-muted">Share a little context. We’ll review your request for a relevant point of connection.</p>
+        <p className="eyebrow">Private enquiry</p><h2 id="request-title" className="mt-4 font-editorial text-3xl text-paper sm:text-4xl">What brings you here?</h2><p id="request-description" className="mt-3 max-w-lg text-xs leading-6 text-copy-muted">Share a little context. We’ll review your request for a relevant point of connection.</p>
         <form className="mt-7" onSubmit={onSubmit}>
           <fieldset><legend className="mb-3 text-xs text-paper-dim">Select the closest fit</legend><div className="grid gap-2 sm:grid-cols-2">
             {intentOptions.map((option) => <label key={option} className={`flex min-h-11 cursor-pointer items-center gap-3 border px-3 py-2.5 text-xs transition-colors ${intent === option ? "border-metal/70 bg-surface-raised text-paper" : "hairline text-copy-muted hover:border-metal/40"}`}><input type="radio" name="intent" value={option} checked={intent === option} onChange={() => setIntent(option)} className="accent-primary" required />{option}</label>)}
