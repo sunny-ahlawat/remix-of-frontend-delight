@@ -133,9 +133,9 @@ function Index() {
         <div className="hero__scrim" aria-hidden="true" />
         <NetworkGraphic />
         <div className="section-shell relative z-10 grid min-h-[690px] items-center md:min-h-[750px] md:grid-cols-[1fr_0.65fr]">
-          <div className="max-w-[43rem] py-20">
+          <div className="hero__copy min-w-0 max-w-[43rem] py-20">
             <p className="eyebrow mb-7">Global advisory <span aria-hidden="true">·</span> Capital <span aria-hidden="true">·</span> Relationships</p>
-            <h1 className="font-editorial text-6xl font-medium leading-[0.94] text-paper sm:text-7xl md:text-[6.5rem]">
+            <h1 className="hero__title font-editorial text-6xl font-medium leading-[0.94] text-paper sm:text-7xl md:text-[6.5rem]">
               CAPITAL MOVES.<br />
               <span className="text-metal">RELATIONSHIPS</span><br />DECIDE.
             </h1>
@@ -262,7 +262,7 @@ function Index() {
 
       <section className="section-shell py-28 md:py-36">
         <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:items-end"><div><p className="eyebrow">Start a conversation</p><h2 className="mt-6 font-editorial text-6xl leading-[1] text-paper md:text-7xl">HAVE A DEAL?<br />NEED CAPITAL?<br /><span className="text-metal">SEEKING ALIGNMENT?</span></h2></div><div><p className="max-w-sm text-lg text-paper-dim">Let’s find the right path through the maze.</p><div className="mt-8 grid gap-0 border-t hairline sm:grid-cols-3">
-          {[["For businesses", "Submit an opportunity", "I am raising capital"], ["For investors", "Request investor access", "I am looking for opportunities"], ["For partners", "Join the network", "I want to join the network"]].map(([audience, label, option]) => <button key={audience} type="button" onClick={() => openRequest(label, option)} className="group border-b hairline px-4 py-5 text-left transition-colors hover:bg-surface-raised sm:border-r sm:last:border-r-0"><span className="eyebrow">{audience}</span><span className="mt-3 flex items-center justify-between gap-2 text-xs text-paper">{label}<ArrowUpRight className="size-4 shrink-0 text-metal transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" /></span></button>)}
+          {([["For businesses", "Submit an opportunity", "I am raising capital"], ["For investors", "Request investor access", "I am looking for opportunities"], ["For partners", "Join the network", "I want to join the network"]] as const).map(([audience, label, option]) => <button key={audience} type="button" onClick={() => openRequest(label, option)} className="group border-b hairline px-4 py-5 text-left transition-colors hover:bg-surface-raised sm:border-r sm:last:border-r-0"><span className="eyebrow">{audience}</span><span className="mt-3 flex items-center justify-between gap-2 text-xs text-paper">{label}<ArrowUpRight className="size-4 shrink-0 text-metal transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" /></span></button>)}
         </div></div></div>
       </section>
 
