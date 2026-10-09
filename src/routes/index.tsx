@@ -133,9 +133,9 @@ function Index() {
         <div className="hero__scrim" aria-hidden="true" />
         <NetworkGraphic />
         <div className="section-shell relative z-10 grid min-h-[690px] items-center md:min-h-[750px] md:grid-cols-[1fr_0.65fr]">
-          <div className="max-w-[43rem] py-20">
+          <div className="hero__copy min-w-0 max-w-[43rem] py-20">
             <p className="eyebrow mb-7">Global advisory <span aria-hidden="true">·</span> Capital <span aria-hidden="true">·</span> Relationships</p>
-            <h1 className="font-editorial text-6xl font-medium leading-[0.94] text-paper sm:text-7xl md:text-[6.5rem]">
+            <h1 className="hero__title font-editorial text-6xl font-medium leading-[0.94] text-paper sm:text-7xl md:text-[6.5rem]">
               CAPITAL MOVES.<br />
               <span className="text-metal">RELATIONSHIPS</span><br />DECIDE.
             </h1>
