@@ -6,3 +6,6 @@
 - [x] Add an accessible request modal with intent selection, contact details, optional file input, privacy warning, and confirmation state.
 - [x] Verify desktop rendering, mobile layout, request form submission state, and build/runtime status.
 - [x] Soften typography and replace warm accents with a subtle blue tint; verify the updated page.
+- [ ] Replace the multi-section launch page with the four requested sections and remove duplicate/promotional content.
+- [ ] Use the supplied DJ Partners wordmark and a single concise Private Inquiry form without file uploads.
+- [ ] Verify the enquiry flow, desktop/mobile layout, route metadata, and build status.
