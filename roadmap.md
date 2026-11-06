@@ -9,3 +9,4 @@
 - [x] Replace the multi-section launch page with the four requested sections and remove duplicate/promotional content.
 - [x] Use the supplied DJ Partners wordmark and a single concise Private Inquiry form without file uploads.
 - [x] Verify the enquiry flow, desktop/mobile layout, route metadata, and build status.
+- [x] Align the full site palette and favicon with the DJ Partners wordmark's charcoal and ivory, retaining a restrained blue accent.
