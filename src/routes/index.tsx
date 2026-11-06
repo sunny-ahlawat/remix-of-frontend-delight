@@ -276,7 +276,7 @@ function Index() {
       <footer className="border-t hairline py-8">
         <div className="section-shell flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <img src={wordmark.url} alt="DJ Partners" width={178} height={40} className="h-10 w-[178px] object-contain object-left" />
-          <p className="max-w-2xl text-[10px] leading-5 text-copy-faint">Advisory and transaction support are subject to applicable laws, regulations, agreed mandates, and eligibility requirements. No investment, funding, return, access, or transaction outcome is guaranteed.</p>
+          <p className="max-w-2xl text-[10px] leading-5 text-copy-faint">Advisory and transaction support are subject to applicable laws, regulations, and agreed mandates.</p>
         </div>
       </footer>
     </main>
